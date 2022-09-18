@@ -12,11 +12,12 @@ const Footer = () => {
         <SimpleGrid columns={[1, 4, 5]} spacing={10} py={10} mt={10}>
           <Box gridColumn={['1 span', '2 span']}>
             <Heading size="md" color="white">
-              ProjectX
+              Erthasys Collection
             </Heading>
             <Text mt={5} color="whiteAlpha.600" fontWeight="medium">
-              Project X is a simplified version of a social game prototype. Dive in the universe of
-              unique NFTs to explore, play, mint, hold, trade or feed it with carbon credits!
+              Erthasys Collection is a simplified version of a social game prototype. Dive in the
+              universe of unique NFTs to explore, play, mint, hold, trade or feed it with carbon
+              credits!
             </Text>
           </Box>
           <Box>
@@ -44,8 +45,8 @@ const Footer = () => {
               <Heading size="md" color="white">
                 Contact
               </Heading>
-              <a href="#!">+1 339-707-5370</a>
-              <a href="mailto:saquib@terolabs.org">saquib@terolabs.org</a>
+              <a href="#!">+x xxx-xxx-xxxx</a>
+              <a href="mailto:contact@leveor.xyz">contact@leveor.xyz</a>
               <HStack fontSize={23} gap={10}>
                 <a href="#!">
                   <Icon as={IoLogoYoutube} />

@@ -30,14 +30,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           chainId: 44787,
         }}
         dapp={{
-          name: 'ProjectX',
-          description: 'ProjectX',
+          name: 'Erthasys Collection',
+          description: 'Erthasys Collection',
           url: '',
           icon: '',
         }}
       >
         <Head>
-          <title>ProjectX</title>
+          <title>Erthasys Collection</title>
         </Head>
         <Layout>
           <Component {...pageProps} />
