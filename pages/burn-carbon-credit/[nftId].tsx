@@ -155,7 +155,7 @@ const BurnCarbonCredit: NextPage = () => {
                   <Box w="100%">
                     <InputGroup>
                       <InputRightElement pointerEvents="none">
-                        <Icon as={BiChart} color="white" fontWeight="bold" />
+                        <Icon as={BiChart} fontWeight="bold" />
                       </InputRightElement>
                       <Input
                         type="number"
@@ -164,6 +164,7 @@ const BurnCarbonCredit: NextPage = () => {
                         backdropFilter="blur(40.1868px)"
                         borderTopRightRadius="20px"
                         borderBottomLeftRadius="20px"
+                        borderColor="brand.100"
                         {...register('amount', {
                           required: true,
                           min: 1000,

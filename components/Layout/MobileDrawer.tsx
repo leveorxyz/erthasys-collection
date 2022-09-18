@@ -29,10 +29,10 @@ const MobileDrawer = ({ onClose, isOpen }: PropTypes) => {
       <DrawerOverlay />
       <DrawerContent>
         <DrawerCloseButton color="white" fontSize={16} />
-        <DrawerHeader borderBottomWidth="1px" bg="blue.100">
-          <Image src="/images/logo.svg" alt="SuperNova" width="60px" />
+        <DrawerHeader borderBottomWidth="1px" bg="white">
+          <Image src="/images/logo.png" alt="Erthasys" w="160" h="38" />
         </DrawerHeader>
-        <DrawerBody bg="blue.100">
+        <DrawerBody bg="darkGreen.100">
           <VStack alignItems="flex-start" gap={15}>
             <Link href="#!">
               <a>

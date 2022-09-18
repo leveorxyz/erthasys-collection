@@ -11,14 +11,15 @@ const Card = ({ width, height, children }: PropTypes) => {
     <Box
       w={['auto', width]}
       minH={['auto', height]}
-      bg="gradient.nftcard"
+      bg="darkGreen.100"
       borderTopRightRadius={20}
-      borderColor="whiteAlpha.400"
+      borderColor="brand.100"
       borderWidth="1.25px"
       backdropFilter="blur(69.3223px)"
+      color="white"
       p="15px"
       _hover={{
-        background: 'gradient.nftcardHover',
+        background: 'brand.50',
       }}
       transition="0.3s all"
     >

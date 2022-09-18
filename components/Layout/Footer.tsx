@@ -3,48 +3,36 @@ import { IoLogoYoutube, IoLogoDiscord, IoLogoInstagram } from 'react-icons/io5';
 
 const Footer = () => {
   return (
-    <Box
-      bg="linear-gradient(180deg, rgba(28, 43, 112, 0) 12.71%, rgba(83, 64, 167, 0.4) 100%)"
-      backdropFilter="blur(4px)"
-      as="footer"
-    >
+    <Box backdropFilter="blur(4px)" bg="darkGreen.100" as="footer" color="white">
       <Box className="container">
         <SimpleGrid columns={[1, 4, 5]} spacing={10} py={10} mt={10}>
           <Box gridColumn={['1 span', '2 span']}>
-            <Heading size="md" color="white">
-              Erthasys Collection
-            </Heading>
-            <Text mt={5} color="whiteAlpha.600" fontWeight="medium">
+            <Heading size="md">Erthasys Collection</Heading>
+            <Text mt={5} fontWeight="medium">
               Erthasys Collection is a simplified version of a social game prototype. Dive in the
               universe of unique NFTs to explore, play, mint, hold, trade or feed it with carbon
               credits!
             </Text>
           </Box>
           <Box>
-            <VStack align="flex-start" gap="20px" color="whiteAlpha.600">
-              <Heading size="md" color="white">
-                About
-              </Heading>
+            <VStack align="flex-start" gap="20px">
+              <Heading size="md">About</Heading>
               <a href="#!">Product</a>
               <a href="#!">Terms & Condition</a>
               <a href="#!">FAQ</a>
             </VStack>
           </Box>
           <Box>
-            <VStack align="flex-start" gap="20px" color="whiteAlpha.600">
-              <Heading size="md" color="white">
-                Company
-              </Heading>
+            <VStack align="flex-start" gap="20px">
+              <Heading size="md">Company</Heading>
               <a href="#!">Our Team</a>
               <a href="#!">Partner With Us</a>
               <a href="#!">Privacy & Policy</a>
             </VStack>
           </Box>
           <Box>
-            <VStack align="flex-start" gap="20px" color="whiteAlpha.600">
-              <Heading size="md" color="white">
-                Contact
-              </Heading>
+            <VStack align="flex-start" gap="20px">
+              <Heading size="md">Contact</Heading>
               <a href="#!">+x xxx-xxx-xxxx</a>
               <a href="mailto:contact@leveor.xyz">contact@leveor.xyz</a>
               <HStack fontSize={23} gap={10}>
