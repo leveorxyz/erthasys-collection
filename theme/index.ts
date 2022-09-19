@@ -4,41 +4,30 @@ const customTheme = extendTheme({
   styles: {
     global: {
       body: {
-        color: '#fff',
-        background: '#01204C',
-        backgroundImage:
-          'url("/images/bg-image.png"),\
-          linear-gradient(113.49deg, rgba(152, 77, 56, 0.5) -30.3%, rgba(108, 71, 218, 0.5) -30.28%, rgba(1, 32, 76, 0.5) 89.92%)',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
+        color: '#1C3238',
+        background:
+          'linear-gradient(90deg,rgba(53, 103, 95, 0.2) -1.52%, rgba(28, 50, 56, 0.06) 104.35%)',
       },
     },
   },
   colors: {
     brand: {
-      100: '#2CA0E2',
-    },
-    gray: {
-      100: '#eff3fa',
-    },
-    blue: {
-      100: '#01204C',
+      50: '#35675fb3',
+      100: '#35675F',
     },
     red: {
       100: '#D9424B',
     },
-    green: {
-      100: '#1AE49B',
+    darkGreen: {
+      100: '#1C3238',
     },
+    green: {
+      100: '#ACD113',
+    },
+
     gradient: {
-      slider: 'linear-gradient(90.01deg, rgba(12, 36, 90, 0.4) 22.08%, rgba(9, 35, 87, 0) 99.32%)',
-      nftcard:
-        'linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%)',
-      nftcardHover:
-        'linear-gradient(90deg, rgba(255, 255, 255, 0.2) -1.52%, rgba(255, 255, 255, 0.06) 104.35%)',
-      inputBg:
-        'linear-gradient(90deg, rgba(255, 255, 255, 0.1) -3.84%, rgba(255, 255, 255, 0.024) 133.08%)',
+      slider: 'linear-gradient(90.01deg, rgba(28,50,56,0.3) 22.08%, rgba(53,103,95,0) 99.32%)',
+      inputBg: 'linear-gradient(90deg, rgba(53,103,95,0.1) -3.84%, rgba(28,50,56,0.024) 133.08%)',
     },
   },
 
@@ -64,23 +53,25 @@ const customTheme = extendTheme({
           borderRadius: 0,
           borderTopLeftRadius: '20px',
           borderBottomRightRadius: '20px',
-          background: 'brand.100',
+          color: 'darkGreen.100',
+          background: 'green.100',
           border: '1px solid',
-          borderColor: 'brand.100',
+          borderColor: 'green.100',
           _hover: {
-            backgroundColor: 'brand.100',
-            border: '1px solid white',
+            backgroundColor: 'green.100',
+            border: '1px solid green',
             _disabled: {
-              background: 'brand.100',
+              background: 'green.100',
             },
           },
           _active: {
-            background: 'brand.100',
+            background: 'green.100',
           },
         },
         link: {
+          color: 'white',
           _active: {
-            color: 'white',
+            color: 'darkGreen.100',
           },
         },
       },

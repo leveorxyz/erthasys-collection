@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 435px);
+  min-height: calc(100vh - 400px);
 }
 
 a {
@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: #acd113;
 }
 
 .container {
@@ -190,4 +190,8 @@ a:hover {
   .container {
     padding: 0px 1rem;
   }
+}
+
+#nprogress .bar {
+  background: #acd113 !important;
 }

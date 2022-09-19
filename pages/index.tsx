@@ -96,11 +96,18 @@ const Home: NextPage = () => {
 
       {/* Claimable NFTS */}
       {claimableNFTs.length > 0 && (
-        <SliderContainer title="Claimable NFTs">
+        <SliderContainer title="NFTs for Sale">
           {isClaimableLoading ? (
             <SliderPlaceholder width="235px" height="309px" />
           ) : (
             <SlickSlider slideToShow={claimableNFTs.length < 5 ? claimableNFTs.length : 5}>
+              <NftCard
+                nftId="10"
+                title="Earth"
+                thumbnail="https://www.billboard.com/wp-content/uploads/media/05-lil-dicky-earth-MV-2019-billboard-1548.jpg"
+                claimableDate="1663489923"
+                refetchData={refetchData}
+              />
               {claimableNFTs.map((item) => (
                 <NftCard
                   key={item.nftID}
@@ -118,7 +125,7 @@ const Home: NextPage = () => {
 
       {/* Minted NFTS */}
       {mintedNFTs.length > 0 && (
-        <SliderContainer title="Minted NFTs">
+        <SliderContainer title="My NFTs">
           {isMintedLoading ? (
             <SliderPlaceholder width="235px" height="453px" numCards={5} />
           ) : (

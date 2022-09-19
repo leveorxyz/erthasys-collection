@@ -75,10 +75,10 @@ const NftCard = ({
         <Text>{getFormattedDate(claimableDate)}</Text>
         {+claimableDate <= new Date().getTime() / 1000 ? (
           <Button onClick={handleMinting} isLoading={isLoading}>
-            Mint NFT
+            Buy NFT
           </Button>
         ) : (
-          <Button isDisabled>Mint NFT</Button>
+          <Button isDisabled>Buy NFT</Button>
         )}
       </Flex>
     </Card>

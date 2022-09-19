@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { Image, Text, Flex, Button } from '@chakra-ui/react';
+import { Image, Text, Flex } from '@chakra-ui/react';
 import Card from './Card';
 import { getFormattedDate } from '../../utils/helpers';
 
@@ -19,7 +18,6 @@ const MintedNFTCard = ({
   width,
   height,
   title,
-  nftId,
   thumbnail,
   thumbnailHeight,
   reward,
@@ -40,11 +38,11 @@ const MintedNFTCard = ({
       </Text>
       <Flex justifyContent="space-between" alignItems="center">
         <Text>{getFormattedDate(mintingDate)}</Text>
-        <Link href={`/trade-nft/${nftId}`}>
+        {/* <Link href={`/trade-nft/${nftId}`}>
           <a>
             <Button>Trade</Button>
           </a>
-        </Link>
+        </Link> */}
       </Flex>
       <Text fontSize="13px" my={2}>
         <b>Reward:</b> {reward}
@@ -52,16 +50,16 @@ const MintedNFTCard = ({
       <Text fontSize="13px">
         <b>Expiry Date:</b> {getFormattedDate(expiryDate)}
       </Text>
-      <Button w="100%" mt="2">
+      {/* <Button w="100%" mt="2">
         Claim Reward
-      </Button>
-      <Link href={`/burn-carbon-credit/${nftId}`}>
+      </Button> */}
+      {/* <Link href={`/burn-carbon-credit/${nftId}`}>
         <a>
           <Button w="100%" mt="2">
             Burn Carbon Credit
           </Button>
         </a>
-      </Link>
+      </Link> */}
     </Card>
   );
 };

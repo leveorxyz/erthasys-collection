@@ -15,7 +15,7 @@ import {
   Tooltip,
   HStack,
 } from '@chakra-ui/react';
-import { IoSearch, IoMenu, IoChevronBackOutline } from 'react-icons/io5';
+import { IoSearch, IoMenu } from 'react-icons/io5';
 import { useContractKit } from '@celo-tools/use-contractkit';
 import MobileDrawer from './MobileDrawer';
 
@@ -32,18 +32,13 @@ const Header = () => {
   };
 
   return (
-    <Box py={4}>
+    <Box py={4} bg="darkGreen.100">
       <Box className="container">
         <Flex as="nav" justifyContent="space-between">
-          {router.pathname !== '/' && (
-            <Button variant="link" position="absolute" mt={10} onClick={() => router.back()}>
-              <Icon as={IoChevronBackOutline} fontSize="2xl" />
-            </Button>
-          )}
           <HStack gap={7}>
             <Link href={isAdmin ? '/admin' : '/'}>
               <a>
-                <Image src="/images/logo.svg" alt="Fomet" />
+                <Image src="/images/logo.png" alt="Erthasys" w="160" h="38" />
               </a>
             </Link>
 
@@ -51,23 +46,17 @@ const Header = () => {
               <>
                 <Link href="#!">
                   <a>
-                    <Button variant="link" color="white">
-                      Explore
-                    </Button>
+                    <Button variant="link">Explore</Button>
                   </a>
                 </Link>
                 <Link href="#!">
                   <a>
-                    <Button variant="link" color="white">
-                      About
-                    </Button>
+                    <Button variant="link">About</Button>
                   </a>
                 </Link>
                 <Link href="#!">
                   <a>
-                    <Button variant="link" color="white">
-                      How It Works
-                    </Button>
+                    <Button variant="link">How It Works</Button>
                   </a>
                 </Link>
               </>
@@ -77,12 +66,12 @@ const Header = () => {
             <HStack gap={7}>
               <InputGroup width="320px">
                 <InputRightElement pointerEvents="none">
-                  <Icon as={IoSearch} color="white" fontWeight="bold" />
+                  <Icon as={IoSearch} fontWeight="bold" />
                 </InputRightElement>
                 <Input
                   type="search"
                   placeholder="Search your interest"
-                  background="gradient.inputBg"
+                  borderColor="green.100"
                   backdropFilter="blur(40.1868px)"
                   borderTopRightRadius="20px"
                   borderBottomLeftRadius="20px"
